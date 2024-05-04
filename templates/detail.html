@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma'lumotlar</title>
+</head>
+<body>
+    <h1>Ma'lumotlar</h1>
+   
+    <h2>
+        
+        <b>Title:</b> {{book.title}}<br>
+        <b>Author:</b> {{book.author}}<br>
+        <b>Price:</b> {{book.price}}<br>
+        <b>Body:</b> {{book.body}}<br>
+
+
+
+
+
+    </h2>
+    <h5>
+        <a href="{% url 'update_book' book.pk %}">Back</a>
+    </h5>
+    <h5>
+        <a href="{% url 'delete_book' book.pk %}">Delete</a>
+    </h5>
+    <a href="{% url 'get_authors' %}">Bosh sahifaga qaytish</a>
+
+
+
+    
+
+
+</body>
+</html>
